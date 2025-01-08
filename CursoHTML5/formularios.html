@@ -7,12 +7,99 @@
 </head>
 <body>
     <h1>Formularios</h1>
-    <form method="post" action="enlaces.html" enctype="text/plain">
-        <label for="formulario">Nombre:</label>
-        <input type="text" id="formulario" placeholder="Nombre..."/>
-        <button>Enviar de Prueba</button>
-        <input type="submit" value="Enviar formulario" />
+    <form>
+        <fieldset>
+            <legend>Información Personal</legend>
 
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre..."/>
+            </div>
+
+        <div>
+            <label for="descripcion">Descripción:</label>
+            <textarea id="descripcion"></textarea>
+        </div>
+
+        <div>
+            Email:
+            <input type="email"/>
+        </div>
+
+        <div>
+            Contraseña:
+            <input type="password"/>
+        </div>
+
+        <div>
+            Radio:
+            <input type="radio" name="genero" value="hombre"/>
+            <label for="genero">Hombre</label>
+
+            <input type="radio" name="genero" value="mujer"/>
+            <label for="genero">Mujer</label>
+        </div>
+
+        <div>
+            Select:
+            <select>
+                <option value="hombre">Hombre</option>
+                <option value="mujer">Mujer</option>
+            </select>
+        </div>
+
+        <div>
+            Checkbox:
+            <label>
+                <input type="checkbox" /> Menor de edad
+            </label>
+        </div>
+
+        <div>
+            Color:
+            <label>
+                <input type="color" />
+            </label>
+        </div>
+
+        <div>
+            Fecha:
+            <label>
+                <input type="date" /> 
+            </label>
+        </div>
+
+        <div>
+            Ficheros:
+            <label>
+                <input type="file" /> 
+            </label>
+        </div>
+
+        <div>
+            Imagen:
+            <input type="image" src="Images/MonsterHunterIceborne.jpg" width="100"/> 
+        </div>
+
+        <div>
+            Oculto:
+            <input type="hidden" name="Oculto" value="Esto es un campo oculto"/>
+        </div>
+
+        <div>
+            Number:
+            <input type="number" />
+        </div>
+
+        <div>
+            Rango:
+            <input type="range" name="rango"/>
+        </div>
+
+        </fieldset>
+
+
+        <input type="submit" value="Enviar" />
     </form>
     
 </body>
