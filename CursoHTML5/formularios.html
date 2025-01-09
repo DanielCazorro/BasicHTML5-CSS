@@ -6,6 +6,22 @@
     <title>Formularios HTML5</title>
 </head>
 <body>
+    <h1>Validación</h1>
+    <form>
+        <input type="text" required 
+            minlength="5"
+            maxlength="10"
+            pattern="[A-Za-z ]+"
+        />
+
+        <input type="number" required 
+            min="5"
+            max="20"/>
+
+        <input type="submit" value="enviar" />
+    </form>
+
+
     <h1>Formularios</h1>
     <form>
         <fieldset>
@@ -147,7 +163,7 @@
         <input type="submit" value="Enviar" />
         <input type="reset" value="Limpiar formulario" />
     </form>
-    
+
     
 </body>
 </html>
