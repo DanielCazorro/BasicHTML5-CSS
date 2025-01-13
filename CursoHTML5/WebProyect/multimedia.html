@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" type="image/png" href="images/favIcon.png" />
+    <title>Multimedia - Proyecto HTML5</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+            color: #4CAF50;
+        }
+
+        section {
+            margin: 20px auto;
+            padding: 20px;
+            width: 80%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 20px;
+        }
+
+        article img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        article h3 {
+            margin-top: 10px;
+            color: #4CAF50;
+        }
+
+        article time {
+            font-size: 14px;
+            color: #666;
+        }
+
+        video, audio, iframe {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+        }
+
+        iframe {
+            border-radius: 8px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Proyecto: Multimedia</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="multimedia.html">Multimedia</a></li>
+                <li><a href="dieta.html">Dieta</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <h2>Contenido Multimedia</h2>
+
+    <section id="multimedia">
+        <!-- Artículo con imagen y descripción -->
+        <article>
+            <img src="images/favIcon.png" alt="Imagen destacada del artículo">
+            <h3>Artículo Multimedia</h3>
+            <time datetime="2025-01-01">1 de Enero de 2025</time>
+            <p>
+                <b>Descripción:</b> Este artículo destaca la importancia de los recursos multimedia en la web, integrando imágenes, videos y audios.
+            </p>
+        </article>
+
+        <!-- Video -->
+        <h3>Video de muestra</h3>
+        <video src="media/video1.mp4" controls poster="images/video-placeholder.png">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        <!-- Audio -->
+        <h3>Audio de muestra</h3>
+        <audio src="media/audio1.mp3" controls>
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+
+        <!-- Video embebido de YouTube -->
+        <h3>Video de YouTube</h3>
+        <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/Xw4H18Fxx7E?si=EZcCIFXb_7HHkySu" 
+            title="Video de YouTube - Proyecto Multimedia" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen>
+        </iframe>
+    </section>
+
+    <footer>
+        Proyecto de HTML5 &copy; Daniel Cazorro 2025
+    </footer>
+</body>
+</html>
