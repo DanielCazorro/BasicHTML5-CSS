@@ -27,9 +27,78 @@ footer a{
 }
 
 /* Selector De ID */
+#descripcion, 
+#subtitulo
+{
+    border: 1px solid black;
+    padding: 16px;
+}
 
+#titulo{
+    background: blue;
+    border: 2px dashed white;
+}
 
 /* Selector De Clase */
+.parrafo{
+    font-style: italic;
+    text-decoration: underline;
+    font-weight: bold;
+    padding: 16px;
+}
+
+.parrafoDos{
+    background-color: green;
+    color: white;
+    padding: 16px;
+}
+
+.parrafoTres{
+    background-color: orange;
+    color: black;
+}
 
 /* Selector De Atributo */
+#usuario form {
+    border: 8px solid blue;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    padding: 20px;
+}
+
+#usuario form * {
+    display: block;
+}
+
+input[type="text"] {
+    margin-bottom: 16px;
+    padding: 8px;
+    width: 400px;
+}
+
+input[type="submit"] {
+    background: green;
+    color: white;
+    padding: 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+/* Selectores Hijos */
+#menu > li > a{
+    font-size: 18px;
+    color: red;
+    text-decoration: none;
+}
+
+/* Prioridad */
+#saludo h1 {
+    background: brown !important;
+}
+
+h1 {
+    background: purple !important;
+}
 
