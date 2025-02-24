@@ -4,14 +4,23 @@
     box-sizing: border-box;
 }
 
-#caja1, #caja2, #caja3 {
+body {
+    padding: 16;
+}
+
+#cajas {
+    max-width: 1035px;
+}
+
+.caja p {
     width: 100px;
     height: 100px;
     background-color: red;
-    margin: 16px, 16px;
+    margin: 16px 16px;
     margin-top: 32px;
     padding: 10px;
-    border: 8px solid rebeccapurple;
+    border: 8px solid #663399;
+    float: left;
 }
 
 p {
@@ -20,5 +29,10 @@ p {
     font-size: 20px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    line-height: 234px;
+    line-height: 2em;
+}
+
+.clearfix {
+    float: none;
+    clear: left;
 }
