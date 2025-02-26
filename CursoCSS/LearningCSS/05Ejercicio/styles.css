@@ -73,16 +73,27 @@
     color: blue;
     font-size: 24px;
     margin-bottom: 20px;
+    text-shadow: -10px 10px 10px #000;
 }
 
 #content .box {
     width: 40%;
     height: 60px;
-    background-color: red;
-    border: 5px solid blue;
+    background-color: #ccc;
+    border: 1px solid gray;
     float: left;
     background: #ccc;
     margin: 16px;
+    text-align: center;
+    line-height: 60px;
+    color: black;
+    text-transform: uppercase;
+    box-shadow: 4px 4px 10px gray;
+    border-radius: 40px;
+}
+
+.shadow-inside {
+    box-shadow: 0px 5px 10px gray inset !important;
 }
 
 footer {
