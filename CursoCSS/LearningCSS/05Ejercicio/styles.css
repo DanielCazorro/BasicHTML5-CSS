@@ -67,6 +67,9 @@
     padding: 20px;
     float: right;
     text-align: center;
+    max-height: 600px;
+    overflow-y: scroll;
+    margin-bottom: 24px;
 }
 
 #content >h2 {
@@ -103,4 +106,44 @@ footer {
     color: white;
     text-align: center;
     line-height: 90px;
+    margin-top: 8px;
+}
+
+.free {
+    position: absolute;
+    top: 16px;
+    left: 20%;
+    background: #686565;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.secondFree {
+    position: absolute;
+    top: 16px;
+    right: 20%;
+    background: #686565;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.fixedBox {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #686565;
+    color: black;
+    text-align: center;
+    padding: 8px;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
 }

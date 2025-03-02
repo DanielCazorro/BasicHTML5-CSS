@@ -1,0 +1,56 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
+    font-size: 20px;
+}
+
+ul li:first-child {
+    color: red;
+}
+
+ul li:nth-child(2) {
+    color: yellow;
+}
+
+ul li:last-child {
+    color: green;
+}
+
+#myEnlace {
+    font-size: 30px;
+    color: blue;
+}
+
+#myEnlace:link {
+    color: red;
+    text-decoration: none;
+}
+
+#myEnlace:visited {
+    color: green;
+}
+
+#myEnlace:hover {
+    color: yellow;
+    background-color: black;
+}
+
+#myEnlace:active {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+input[type="text"] {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input[type="text"]:focus {
+    border: 1px solid blue;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5);
+}
