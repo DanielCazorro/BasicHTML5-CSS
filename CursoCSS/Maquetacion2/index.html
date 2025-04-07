@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cursos de desarrollo web, sistemas operativos, hardware, redes e internet, y bases de datos. Aprende con Daniel.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Desarrollo Web, Programación, Redes, Bases de Datos">
+    <meta name="author" content="Daniel Cazorro Frias">
+    <title>Máster en CSS</title>
+    <link rel="icon" type="image/x-icon" href="img/supertux.png">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="wrap">
+            <div id="logo">
+                <span class="gear" aria-label="Logo del blog">S</span>
+                <h3>Blog</h3>
+            </div>
+            <nav id="menu" aria-label="Menú principal">
+                <ul>
+                    <li><a href="#" aria-label="Ir a Inicio">Inicio</a></li>
+                    <li><a href="#" aria-label="Ir al Blog">Blog</a></li>
+                    <li><a href="#" aria-label="Ir a Formación">Formación</a></li>
+                    <li><a href="#" aria-label="Ir a Contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Header end -->
+
+    <main class="wrap">
+        <!-- Información principal -->
+        <section id="info">
+            <!-- Banner -->
+            <div id="banner">
+                <h1>Cursos de Desarrollo Web con Daniel</h1>
+            </div>
+
+            <!-- Tarjetas -->
+            <div id="cards">
+                <div class="card">
+                    <p class="icon">H</p>
+                    <h2 class="category">Desarrollo Web</h2>
+                    <p class="description">
+                        Aprende a crear sitios web con HTML, CSS y JavaScript.
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="icon">_</p>
+                    <h2 class="category">Sistemas Operativos</h2>
+                    <p class="description">
+                        Aprende a administrar sistemas operativos con Linux y Windows.
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="icon">S</p>
+                    <h2 class="category">Hardware</h2>
+                    <p class="description">
+                        Aprende a ensamblar y reparar computadoras.
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="icon">u</p>
+                    <h2 class="category">Redes e Internet</h2>
+                    <p class="description">
+                        Aprende a configurar redes y servidores de internet.
+                    </p>
+                </div>
+                <div class="card">
+                    <p class="icon">a</p>
+                    <h2 class="category">Bases de datos</h2>
+                    <p class="description">
+                        Aprende a crear y administrar bases de datos con MySQL y SQL Server.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Barra lateral -->
+        <aside id="lateral">
+            <h3>Buscar</h3>
+            <div id="search">
+                <form action="#" aria-label="Formulario de búsqueda">
+                    <input type="text" placeholder="Buscar..." aria-label="Campo de búsqueda" />
+                    <input type="button" value="L" class="icon" aria-label="Botón de búsqueda" />
+                </form>
+            </div>
+
+            <h3>Login</h3>
+            <div id="login" class="aside-box">
+                <form action="#" aria-label="Formulario de inicio de sesión">
+                    <label id="user" class="icon" for="email">U</label>
+                    <input type="email" id="email" placeholder="Correo electrónico" aria-label="Correo electrónico" />
+
+                    <label id="password" class="icon" for="password-field">w</label>
+                    <input type="password" id="password-field" placeholder="Contraseña" aria-label="Contraseña" />
+
+                    <input type="submit" value="Entrar" />
+                    <input type="reset" value="Limpiar" />
+
+                    <a href="#">Regístrate aquí</a>
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                </form>
+            </div>
+
+            <h3>Redes sociales</h3>
+            <div id="social" class="aside-box">
+                <div class="twitter">
+                    <a href="#" class="icon" aria-label="Twitter">t</a>
+                </div>
+                <div class="facebook">
+                    <a href="#" class="icon" aria-label="Facebook">f</a>
+                </div>
+                <div class="youtube">
+                    <a href="#" class="icon" aria-label="YouTube">y</a>
+                </div>
+            </div>
+
+            <h3>Patrocinadores</h3>
+            <div id="sponsors" class="aside-box">
+                <p>Próximamente...</p>
+            </div>
+        </aside>
+
+        <!-- Artículos -->
+        <section id="articles">
+            <h2>Últimos artículos</h2>
+            <div class="clearfix"></div>
+            <article>
+                <div class="data">
+                    <span>Fecha: 12 Enero</span>
+                    <span>Categoría: Pruebas</span>
+                </div>
+                <h4>
+                    <a href="#">Título del artículo</a>
+                    <p>This is a Monster Hunter article</p>
+                </h4>
+            </article>
+            <article>
+                <div class="data">
+                    <span>Fecha: 15 Febrero</span>
+                    <span>Categoría: Tecnología</span>
+                </div>
+                <h4>
+                    <a href="#">Novedades en Inteligencia Artificial</a>
+                    <p>Explora los últimos avances en IA y cómo están transformando el mundo.</p>
+                </h4>
+            </article>
+            <article>
+                <div class="data">
+                    <span>Fecha: 20 Marzo</span>
+                    <span>Categoría: Desarrollo Web</span>
+                </div>
+                <h4>
+                    <a href="#">Guía de CSS para Principiantes</a>
+                    <p>Aprende los fundamentos de CSS para diseñar sitios web atractivos.</p>
+                </h4>
+            </article>
+            <article>
+                <div class="data">
+                    <span>Fecha: 5 Abril</span>
+                    <span>Categoría: Videojuegos</span>
+                </div>
+                <h4>
+                    <a href="#">Top 10 Juegos del Año</a>
+                    <p>Descubre los mejores videojuegos lanzados este año.</p>
+                </h4>
+            </article>
+            <article>
+                <div class="data">
+                    <span>Fecha: 10 Mayo</span>
+                    <span>Categoría: Educación</span>
+                </div>
+                <h4>
+                    <a href="#">Aprender a Programar desde Cero</a>
+                    <p>Consejos y recursos para comenzar tu viaje en el mundo de la programación.</p>
+                </h4>
+            </article>
+            <article id="blog">
+                <a href="#">Ir al blog</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="wrap">
+            <p>Desarrollado por Daniel</p>
+            <p>&copy; Todos los derechos reservados</p>
+        </div>
+        <div class="clearfix"></div>
+        <div id="footer-bottom">
+            <p>Diseño por Daniel</p>
+            <p>Desarrollado por Daniel</p>
+            <p>2023</p>
+        </div>
+    </footer>
+</body>
+</html>
