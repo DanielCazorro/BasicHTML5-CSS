@@ -193,6 +193,16 @@ body {
     background: url("../img/bakbaner.png");
     background-position: -200px, -200px;
     margin: 20px auto;
+    animation: backBanner 10s linear;
+}
+
+@keyframes backBanner {
+    0% {
+        background-position: -200px, -200px;
+    }
+    100% {
+        background-position: 0px, 0px;
+    }
 }
 
 #banner h1 {
@@ -205,7 +215,18 @@ body {
     letter-spacing: 2px;
     text-shadow: 2px 2px 1px black;
     margin: 27px auto;
-    
+    animation: showText 10s linear;
+}
+
+@keyframes showText {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* Tarjetas */
@@ -220,7 +241,7 @@ body {
     margin: 20px;
     margin-top: 40px;
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;;
 }
 
 .card:hover {
@@ -238,6 +259,21 @@ body {
     margin: 0px auto;
 }
 
+.card:hover .icon {
+    color: #37bcf9;
+    transform: scale(1.2);
+    animation: showIcon 300ms linear;
+}
+
+@keyframes showIcon {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
 .card .category {
     width: 100%;
     height: 50px;
@@ -246,6 +282,27 @@ body {
     font-weight: bold;
     text-align: center;
     color: #005380;
+    transition: all 0.3s;
+}
+
+.card:hover .category {
+    color: #37bcf9;
+    transform: scale(1.1);
+    animation: showCategory 300ms linear;
+}
+
+@keyframes showCategory {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+.card .category:hover {
+    color: #37bcf9;
+    text-decoration: underline;
 }
 
 .card .description {
@@ -253,6 +310,21 @@ body {
     font-size: 16px;
     text-align: center;
     color: #146997;
+}
+
+.card:hover .description {
+    color: #37bcf9;
+    text-decoration: underline;
+    animation: showDescription 300ms linear;
+}
+
+@keyframes showDescription {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 /* Barra lateral */
@@ -430,6 +502,30 @@ body {
     margin-bottom: 20px;
 }
 
+#social .overlay {
+    display: block;
+    height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px, 1px, 0px #fff;
+    color: #fff;
+    background: url("../img/pxgray.png");
+    position: absolute;
+    padding: 5px;
+    margin-left: 70px;
+    margin-top: -52px;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+#social div:hover .overlay {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    transform: translateX(0);
+}
+
 /* Article */
 #articles {
     width: 860px;
@@ -498,6 +594,35 @@ body {
 }
 
 /* Blog Button */
+
+#blog {
+    height: 100px;
+    margin-top: 60px;
+    line-height: 100px;
+    text-align: center;
+    transition: all 1s;
+}
+
+#blog:hover {
+    border: 10px solid #37bcf9;
+    border-radius: 240px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+    animation: blink 10s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        background: #005380;
+    }
+    50% {
+        background: #37bcf9;
+    }
+    100% {
+        background: #005380;
+    }
+}
+
 #blog a {
     display: block;
     text-align: center;
@@ -529,6 +654,7 @@ body {
     padding: 20px 0;
     margin-top: 40px;
     box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
 }
 
 #footer p {
